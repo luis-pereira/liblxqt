@@ -29,40 +29,40 @@
 #include "lxqtplatform.h"
 using namespace LXQt;
 
-Platform::PLATFORM Platform::getPlatform()
+Platform::PlatformType Platform::getPlatform()
 {
     const QString platform = QGuiApplication::platformName();
 
     if(platform == QSL("wayland"))
-        return PLATFORM::WAYLAND;
+        return PlatformType::WAYLAND;
     else if(platform == QSL("xcb"))
-        return PLATFORM::X11;
+        return PlatformType::X11;
     else if(platform == QSL("windows"))
-        return PLATFORM::WINDOWS;
+        return PlatformType::WINDOWS;
     else if(platform == QSL("qnx"))
-        return PLATFORM::QNX;
+        return PlatformType::QNX;
      else if(platform == QSL("openwfd"))
-        return PLATFORM::OPENWFD;
+        return PlatformType::OPENWFD;
     else if(platform == QSL("offscreen"))
-        return PLATFORM::OFFSCREEN;
+        return PlatformType::OFFSCREEN;
     else if(platform == QSL("minimalegl"))
-        return PLATFORM::MINIMALEGL;
+        return PlatformType::MINIMALEGL;
     else if(platform == QSL("minimal"))
-        return PLATFORM::MINIMAL;
+        return PlatformType::MINIMAL;
     else if(platform == QSL("linuxfb"))
-        return PLATFORM::LINUXFB;
+        return PlatformType::LINUXFB;
     else if(platform == QSL("kms"))
-        return PLATFORM::KMS;
+        return PlatformType::KMS;
     else if(platform == QSL("ios"))
-        return PLATFORM::IOS;
+        return PlatformType::IOS;
     else if(platform == QSL("eglfs"))
-        return PLATFORM::EGLFS;
+        return PlatformType::EGLFS;
     else if(platform == QSL("directfb"))
-        return PLATFORM::DIRECTFB;
+        return PlatformType::DIRECTFB;
     else if(platform == QSL("cocoa"))
-        return PLATFORM::COCOA;
+        return PlatformType::COCOA;
     else if(platform == QSL("android"))
-        return PLATFORM::ANDROID;
+        return PlatformType::ANDROID;
      else
-        return PLATFORM::OTHER;
+        return PlatformType::OTHER;
 }

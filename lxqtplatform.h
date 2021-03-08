@@ -39,7 +39,7 @@ namespace LXQt
 class LXQT_API Platform
 {
 public:
-    enum PLATFORM {
+    enum PlatformType {
         WAYLAND,    //!< Wayland platform
         X11,        //!< X11 platform
         WINDOWS,    //!< Windows platform
@@ -62,7 +62,7 @@ public:
       Returns the actual platform.
       \return Actual platform   .
      **/
-    static PLATFORM getPlatform();
+    static PlatformType getPlatform();
 
 };
 
