@@ -33,35 +33,35 @@ Platform::PlatformType Platform::getPlatform()
 {
     const QString platform = QGuiApplication::platformName();
 
-    if(platform == QSL("wayland"))
+    if(platform == QL1S("wayland"))
         return PlatformType::WAYLAND;
-    else if(platform == QSL("xcb"))
+    else if(platform == QL1S("xcb"))
         return PlatformType::X11;
-    else if(platform == QSL("windows"))
+    else if(platform == QL1S("windows"))
         return PlatformType::WINDOWS;
-    else if(platform == QSL("qnx"))
+    else if(platform == QL1S("qnx"))
         return PlatformType::QNX;
-     else if(platform == QSL("openwfd"))
+     else if(platform == QL1S("openwfd"))
         return PlatformType::OPENWFD;
-    else if(platform == QSL("offscreen"))
+    else if(platform == QL1S("offscreen"))
         return PlatformType::OFFSCREEN;
-    else if(platform == QSL("minimalegl"))
+    else if(platform == QL1S("minimalegl"))
         return PlatformType::MINIMALEGL;
-    else if(platform == QSL("minimal"))
+    else if(platform == QL1S("minimal"))
         return PlatformType::MINIMAL;
-    else if(platform == QSL("linuxfb"))
+    else if(platform == QL1S("linuxfb"))
         return PlatformType::LINUXFB;
-    else if(platform == QSL("kms"))
+    else if(platform == QL1S("kms"))
         return PlatformType::KMS;
-    else if(platform == QSL("ios"))
+    else if(platform == QL1S("ios"))
         return PlatformType::IOS;
-    else if(platform == QSL("eglfs"))
+    else if(platform == QL1S("eglfs"))
         return PlatformType::EGLFS;
-    else if(platform == QSL("directfb"))
+    else if(platform == QL1S("directfb"))
         return PlatformType::DIRECTFB;
-    else if(platform == QSL("cocoa"))
+    else if(platform == QL1S("cocoa"))
         return PlatformType::COCOA;
-    else if(platform == QSL("android"))
+    else if(platform == QL1S("android"))
         return PlatformType::ANDROID;
      else
         return PlatformType::OTHER;
