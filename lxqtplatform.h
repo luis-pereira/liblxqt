@@ -28,7 +28,7 @@
 #ifndef LXQTPLATFORM_H
 #define LXQTPLATFORM_H
 
-#include <QGuiApplication> 
+#include <QGuiApplication>
 #include "lxqtglobals.h"
 
 namespace LXQt
