@@ -31,7 +31,7 @@ using namespace LXQt;
 
 Platform::PLATFORM Platform::getPlatform()
 {
-    QString platform = QGuiApplication::platformName();
+    const QString platform = QGuiApplication::platformName();
 
     if(platform == QSL("wayland"))
         return PLATFORM::WAYLAND;
