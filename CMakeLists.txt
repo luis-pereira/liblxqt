@@ -114,6 +114,7 @@ set(PUBLIC_CLASSES
     RotatedWidget
     Globals
     Backlight
+    Platform
 )
 if (NOT APPLE)
     list (APPEND PUBLIC_CLASSES
